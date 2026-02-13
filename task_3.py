@@ -1,6 +1,6 @@
 import re
 def normalize_phone(phone_number):
-    
+     
     sanitized_numbers = re.sub(r'[^\+\d]', '', phone_number)
     match_plus = re.search('\A\+', sanitized_numbers)
     match_38 = re.search('\A38', sanitized_numbers)
